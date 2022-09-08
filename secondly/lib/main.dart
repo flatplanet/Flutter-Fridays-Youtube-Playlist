@@ -5,13 +5,15 @@ void main() {
     MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Center(
+          title: const Center(
             child: Text("Codemy.com"),
           ),
+          backgroundColor: Colors(90CAF9),
         ),
-        body: Center(
+        body: const Center(
           child: Text("Learn To Code At Codemy.com!!"),
         ),
+        backgroundColor: Colors.deepPurple[200],
       ),
     ),
   );
