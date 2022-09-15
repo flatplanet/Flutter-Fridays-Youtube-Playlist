@@ -8,10 +8,10 @@ void main() {
           title: const Center(
             child: Text("Codemy.com"),
           ),
-          backgroundColor: Colors(90CAF9),
+          backgroundColor: Colors.deepPurple[400],
         ),
         body: const Center(
-          child: Text("Learn To Code At Codemy.com!!"),
+          child: Image(image: AssetImage('images/aspen.png')),
         ),
         backgroundColor: Colors.deepPurple[200],
       ),
