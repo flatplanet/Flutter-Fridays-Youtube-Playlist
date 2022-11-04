@@ -18,15 +18,39 @@ class MyWidget extends StatelessWidget {
         //  backgroundColor: Color.fromARGB(255, 17, 194, 47),
         //),
         body: SafeArea(
-          child: Container(
-            color: Colors.teal,
-            width: 150.0,
-            height: 150.0,
-            alignment: Alignment.center,
-            padding: const EdgeInsets.all(20.0),
-            //margin: EdgeInsets.all(150.0),
-            child: Text("Yo! What's going on?!"),
-          ),
+          child: Column(
+              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(width: double.infinity),
+                Container(
+                  color: Colors.teal,
+                  width: 150.0,
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(20.0),
+                  //margin: EdgeInsets.all(150.0),
+                  child: Text("Column One"),
+                ),
+                Container(
+                  color: Color.fromARGB(255, 226, 71, 71),
+                  width: 150.0,
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(20.0),
+                  //margin: EdgeInsets.all(150.0),
+                  child: Text("Column Two"),
+                ),
+                Container(
+                  color: Color.fromARGB(255, 63, 116, 177),
+                  width: 150.0,
+                  height: 150.0,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.all(20.0),
+                  //margin: EdgeInsets.all(150.0),
+                  child: Text("Column Three"),
+                ),
+              ]),
         ),
       ),
     );
